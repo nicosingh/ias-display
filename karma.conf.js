@@ -34,6 +34,7 @@ module.exports = function (config) {
       }
     },
     browsers: ['ChromeDocker'],
-    singleRun: false
+    singleRun: false,
+    browserNoActivityTimeout: 0
   });
 };

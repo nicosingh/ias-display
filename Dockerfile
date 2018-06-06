@@ -35,8 +35,8 @@ COPY . .
 EXPOSE 4200
 
 # test and build project
-# RUN ng test --watch=false --single-run --browser=ChromeDocker && \
-RUN npm run-script build-prod
+RUN ng test --watch=false --single-run --browser=ChromeDocker && \
+  npm run-script build-prod
 
 # copy compiled files to smaller image
 FROM centos:7
